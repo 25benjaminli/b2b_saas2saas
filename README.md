@@ -1,28 +1,35 @@
 # B2B SaaS to SaaS
 
-Yes, this package generates random SaaS ideas. It can be used as a command-line tool or as a library in your Python projects. 
+This is an AI-powered SaaS generator that can be used to make you (or lose you) millions!
+
+https://pypi.org/project/b2b-saas2saas/
 
 ## Installation
 
 ```bash
-pip install b2bsaas2saas
+pip install b2b_saas2saas
+```
+
+Add your OpenAI key to a .env file. 
+```
+OPENAI_API_KEY=your_key
 ```
 
 ## Usage
 
-### Command Line
-
-```bash
-b2bsaas2saas
-```
-
-### As a Library
-
 ```python
-from b2bsaas2saas.main import get_random_saas_idea
+from b2b_saas2saas import get_random_saas_idea
+import dotenv
+dotenv.load_dotenv()
 
 idea = get_random_saas_idea()
 print(idea)
 ```
+
+dependencies:
+- openai
+- python-dotenv
+
+Use at your own risk - I'm not liable for any damages!
 
 License: MIT

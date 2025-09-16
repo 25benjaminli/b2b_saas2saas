@@ -1,11 +1,6 @@
 from openai import OpenAI
 import os
 
-# load environment variabkes
-import dotenv
-dotenv.load_dotenv()
-
-
 def get_random_saas_idea():
 
     prompt = """
@@ -30,7 +25,4 @@ def get_random_saas_idea():
     temperature=1.2
     )
 
-    print(completion.choices[0].message.content)
-
-if __name__ == "__main__":
-    a = get_random_saas_idea()
+    return completion.choices[0].message.content

@@ -1,23 +1,19 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="b2bsaas2saas",
-    version="0.1.1",
+    name="b2b_saas2saas",
+    version="1.0.0",
     packages=find_packages(),
     install_requires=[
-        "openai"
+        "openai",
+        "python-dotenv"
     ],
-    entry_points={
-        "console_scripts": [
-            "b2bsaas2saas=b2bsaas2saas.main:get_random_saas_idea"
-        ]
-    },
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Benjamin Li",
+    author_email="25benjaminli@gmail.com",
     description="A package to generate random SaaS ideas using ChatGPT",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/b2bsaas2saas",
+    url="https://github.com/25benjaminli/b2b_saas2saas",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
