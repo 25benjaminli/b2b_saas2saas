@@ -30,6 +30,6 @@ dependencies:
 - openai
 - python-dotenv
 
-Use at your own risk - I'm not liable for any damages!
+Use at your own risk - I'm not liable for any damages! Inspired by: https://github.com/abyesilyurt/vibesort
 
 License: MIT
